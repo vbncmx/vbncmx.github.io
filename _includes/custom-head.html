@@ -11,14 +11,39 @@
 </style>
 
 <script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  const MERMAID_CDN =
+    "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  const MERMAID_LOCAL = "{{ '/assets/js/mermaid.min.js' | relative_url }}";
 
-  mermaid.initialize({
-    startOnLoad: false,
-    securityLevel: "loose"
-  });
+  const loadMermaidFromGitHubPages = () =>
+    new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = MERMAID_LOCAL;
+      script.async = true;
+      script.onload = () => resolve(globalThis.mermaid);
+      script.onerror = () =>
+        reject(new Error("Failed to load local Mermaid bundle from site assets"));
+      document.head.appendChild(script);
+    });
 
-  const renderMermaidDiagrams = async () => {
+  const loadMermaid = async () => {
+    try {
+      return (await import(MERMAID_CDN)).default;
+    } catch (error) {
+      console.warn(
+        "Mermaid CDN unavailable, loading copy bundled with the site (GitHub Pages):",
+        error
+      );
+      return loadMermaidFromGitHubPages();
+    }
+  };
+
+  const renderMermaidDiagrams = async (mermaid) => {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose"
+    });
+
     const codeBlocks = document.querySelectorAll("pre > code.language-mermaid");
 
     for (const codeBlock of codeBlocks) {
@@ -40,7 +65,12 @@
     });
   };
 
-  document.addEventListener("DOMContentLoaded", () => {
-    renderMermaidDiagrams();
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const mermaid = await loadMermaid();
+      await renderMermaidDiagrams(mermaid);
+    } catch (error) {
+      console.error("Mermaid could not be loaded:", error);
+    }
   });
 </script>
