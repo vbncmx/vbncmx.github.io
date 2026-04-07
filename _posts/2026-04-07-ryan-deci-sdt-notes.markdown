@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Self Determination Theory Notes"
+title:  "Self Determination Theory Study Notes"
 date:   2026-04-07 18:30:00 +0300
 categories: jekyll update
 ---
@@ -36,6 +36,36 @@ flowchart LR
 
 5. **Motivation must be explained from the inside, not by external control.** Taken together, these ideas justify a shift from viewing motivation as something produced by external contingencies to viewing it as structured by how people experience their own reasons for acting. A viable theory of motivation must therefore focus on the quality of motivation — especially the felt autonomy or control of action — and on how social contexts support or undermine these inner motivational processes.
 
+## Block 2: Mini-theories (Ch. 6-12)
+
+Block 2 brings SDT from general assumptions about human nature to six specific mini-theories that structure its account of motivation, development, and relationships. Ryan and Deci show how different types of motivation, needs, goals, and relationship processes can be systematically understood rather than treated as loose “factors.” This block therefore functions as the theoretical core of the framework, translating the organismic starting points from Block 1 into precise propositions that can guide research and intervention in many applied domains.
+
+```mermaid
+flowchart LR
+    SDT[Self-Determination Theory]
+
+    CET[1. Cognitive Evaluation Theory]
+    OIT[2. Organismic Integration Theory]
+    COT[3. Causality Orientations Theory]
+    BPNT[4. Basic Psychological Needs Theory]
+    GCT[5. Goal Contents Theory]
+    RMT[6. Relationships Motivation Theory]
+
+    SDT --> CET
+    SDT --> OIT
+    SDT --> COT
+    SDT --> BPNT
+    SDT --> GCT
+    SDT --> RMT
+    
+    style SDT fill:#DDEBFF,stroke:#6D8CC3,stroke-width:1px,color:#333333    
+    style CET fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+    style OIT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+    style COT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+    style BPNT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+    style GCT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+    style RMT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
+```
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
