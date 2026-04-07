@@ -7,9 +7,9 @@ categories: jekyll update
 
 *These are my personal study notes on Ryan & Deci (2017), Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness. Any errors or simplifications are my own, and this summary is not a substitute for the original book.*
 
-## Block 1: Organismic foundations of SDT (Ch. 1-5)
+## Block 1: Foundations and necessity of SDT (Ch. 1-5)
 
-The block introduces the organismic foundations of SDT and argues that humans are naturally active, growth-oriented, and socially embedded. It reviews historical and philosophical ideas about organization, autonomy, and psychological needs, and contrasts them with more mechanistic, external control-focused views. Across these chapters, Ryan and Deci motivate the need for a theory that explains how inner tendencies toward curiosity, integration, and well-being depend on specific features of social contexts.
+Block 1 introduces the organismic foundations of SDT and argues that humans are naturally active, growth-oriented, and socially embedded. It reviews historical and philosophical ideas about organization, autonomy, and psychological needs, and contrasts them with more mechanistic, external control-focused views. Across these chapters, Ryan and Deci motivate the need for a theory that explains how inner tendencies toward curiosity, integration, and well-being depend on specific features of social contexts.
 
 ```mermaid
 flowchart LR
@@ -66,6 +66,18 @@ flowchart LR
     style GCT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
     style RMT fill:#E4F4DD,stroke:#7BA766,stroke-width:1px,color:#333333
 ```
+1. **Cognitive Evaluation Theory (CET)** explains how *external events* (rewards, feedback, surveillance, deadlines) change *intrinsic motivation* by affecting *perceived autonomy and competence*. Predicts that *controlling events* and *ego-involving* climates undermine intrinsic motivation, whereas informational, *competence-supportive feedback* and *choice* enhance it.
+
+2. **Organismic Integration Theory (OIT)** describes how *extrinsic motivation* becomes more autonomous through *internalization* and *integration* of social regulations. Differentiates *external, introjected, identified, and integrated regulation* along a *continuum of autonomy*, and links each type to distinct patterns of persistence and *well-being*.
+
+3. **Causality Orientations Theory (COT)** proposes three relatively stable motivational orientations: autonomy, controlled, and impersonal. Shows that these orientations bias how people interpret situations (as supporting choice, control, or helplessness) and thereby shape typical patterns of motivation and adjustment.
+
+4. **Basic Psychological Needs Theory (BPNT)** argues that *autonomy, competence, and relatedness* are *basic psychological nutrients* required for wellness, vitality, and full functioning. Links *need satisfaction* to thriving and *need frustration* to ill-being, defensive motivation, and psychopathology *across cultures and life domains*.
+
+5. **Goal Contents Theory (GCT)** distinguishes *intrinsic life goals* (growth, relationships, community) from *extrinsic ones* (wealth, fame, image). Shows that *intrinsic goals support basic need satisfaction and well-being*, whereas *extrinsic goals tend to undermine them*, even when people succeed at those goals.
+
+6. **Relationships Motivation Theory (RMT)** focuses on how autonomy, competence, and especially relatedness operate within close relationships and groups. Argues that *high-quality relationships require both emotional warmth and autonomy support*, and that *conditional regard or control damages relatedness and personal integration.*
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
