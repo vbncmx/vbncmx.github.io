@@ -27,17 +27,13 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 Here is a test Mermaid diagram:
 
 ```mermaid
-flowchart TD
-    A[1. Humans are intrinsically active<br/>and oriented toward growth] --> F[Need for a coherent<br/>theory of motivation and development]
+flowchart LR
+    A[1. Humans are intrinsically active and oriented toward growth] --> F[Need for a coherent theory of motivation and development]
+    B[2. Intrinsic motivation exists and is fragile under external control] --> F
+    C[3. People strive to integrate norms into a coherent self] --> F
+    D[4. There are basic psychological needs as universal nutrients] --> F
+    E[5. Motivation must be explained from the inside, not by external control] --> F
 
-    B[2. Intrinsic motivation exists<br/>and is fragile under external control] --> F
-
-    C[3. People strive to integrate norms<br/>into a coherent self] --> F
-
-    D[4. There are basic psychological needs<br/>as universal nutrients] --> F
-
-    E[5. Motivation must be explained<br/>from the inside, not by external control] --> F
-    
     style A fill:#FFEFBF,stroke:#D6AF2D,stroke-width:1px,color:#333333
     style B fill:#FFEFBF,stroke:#D6AF2D,stroke-width:1px,color:#333333
     style C fill:#FFEFBF,stroke:#D6AF2D,stroke-width:1px,color:#333333
